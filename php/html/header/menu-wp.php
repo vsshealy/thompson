@@ -14,3 +14,14 @@
 	 * Comments | 
 	**/
 ?>
+
+<div id="header-main-menu-wp">
+	
+	<?php
+		wp_nav_menu( array(
+			'theme_location' => 'menu-1',
+			'menu_id' => 'primary-menu',
+		) );
+	?>
+
+</div> <!-- /#HEADER-MAIN-MENU-WP -->

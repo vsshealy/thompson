@@ -9,3 +9,27 @@
  *
  * Notes |
 **/
+
+#footer-thompsonsoutheast {
+	// GLOBAL
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	#footer-social {
+		display: none;
+		
+		#footer-social-facebook {}
+		#footer-social-twitter {}
+		#footer-social-instagram {}
+		#footer-social-linkedin {}
+		#footer-social-youtube {}
+		#footer-social-vimeo {}
+	} //#FOOTER-SOCIAL
+} //#FOOTER-THOMPSONSOUTHEAST

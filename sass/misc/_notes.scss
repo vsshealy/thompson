@@ -9,3 +9,15 @@
  *
  * Notes |
 **/
+
+// MEDIA QUERY TEMPLATES
+// GLOBAL
+// MOBILE
+@media screen and (max-width: 575px) {} //COL-XS
+@media screen and (min-width: 576px) {} //COL-SM
+@media screen and (min-width: 768px) {} //COL-MD
+@media screen and (max-width: 991px) {} //MOBILE
+
+// DESKTOP
+@media screen and (min-width: 992px) {} //COL-LG
+@media screen and (min-width: 1200px) {} //COL-XL

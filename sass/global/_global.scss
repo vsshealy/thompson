@@ -9,3 +9,102 @@
  *
  * Notes |
 **/
+
+* {
+	// GLOBAL
+	box-sizing: border-box;
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //*
+
+html {
+	// GLOBAL
+	width: 100vw;
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //HTML
+
+body {
+	// GLOBAL
+	font-family: $text-sans;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0px;
+	overflow-x: hidden;
+
+	// MOBILE
+	@media screen and (max-width: 575px) {
+		font-size: 12px;
+	} //COL-XS
+	@media screen and (min-width: 576px) {
+		font-size: 13px;
+	} //COL-SM
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+	} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {
+		font-size: 15px;
+	} //COL-LG
+	@media screen and (min-width: 1200px) {
+		font-size: 16px;
+	} //COL-XL
+} //BODY
+
+.clearfix {
+	// GLOBAL
+	zoom: 1;
+
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //.CLEARFIX
+
+i {
+	// GLOBAL
+	margin-right: 0.50rem;
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //I

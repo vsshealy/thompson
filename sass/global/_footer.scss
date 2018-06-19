@@ -9,3 +9,229 @@
  *
  * Notes |
 **/
+
+footer {
+	// GLOBAL
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0.00rem;
+	padding: 2.00rem 0.00rem;
+	background-color: $grayscale-16;
+	text-align: center;
+
+	.col-md-6, .col-lg-4 {
+		padding: 0.00rem;
+	}
+
+	p, li, a {
+		line-height: 1.25;
+		color: $grayscale-0;
+	}
+
+	a {
+		&:hover {
+			color: $thompson-orange-10;
+		}
+	}
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	#footer-main-left {
+		// GLOBAL
+		display: block;
+		margin-bottom: 2.00rem;
+
+		i {
+			display: block;
+			margin-bottom: 0.50rem;
+		}
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			float: left;
+			text-align: left;
+			margin-bottom: 0.00rem;
+
+			i {
+				display: inline-block;
+			}
+
+			.link-wrap {
+				margin-left: 24px;
+			}
+		} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {
+			.link-wrap {
+				margin-left: 25px;
+			}
+		} //COL-LG
+		@media screen and (min-width: 1200px) {
+			.link-wrap {
+				margin-left: 27px;
+			}
+		} //COL-XL
+
+		#footer-address {
+			// GLOBAL
+			p {
+				margin-top: 0.00rem;
+			}
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-ADDRESS
+
+		#footer-phone {
+			// GLOBAL
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-PHONE
+
+		#footer-fax {
+			// GLOBAL
+			p {
+				margin-bottom: 0.00rem;
+			}
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-FAX
+	} //#FOOTER-MAIN-LEFT
+
+	#footer-main-right {
+		// GLOBAL
+		display: block;
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			float: right;
+			text-align: right;
+		} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+
+		#footer-social {
+			// GLOBAL
+			margin-bottom: 2.00rem;
+
+			nav {
+				ul {
+					list-style: none;
+					margin-bottom: 0.00rem;
+					padding: 0.00rem;
+					border-bottom: 1px solid $grayscale-0;
+
+					li {
+						display: inline-block;
+						margin-top: 0.00rem;
+					} //LI
+				} //UL
+			} //NAV
+
+			i {
+				font-size: 1.75em;
+			} //I
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {
+				i {
+					font-size: 1.50em;
+				} //I
+			} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-SOCIAL
+
+		#footer-nav {
+			// GLOBAL
+			margin-bottom: 2.00rem;
+
+			nav {
+				ul {
+					list-style: none;
+					margin-bottom: 0.00rem;
+					padding: 0.00rem;
+
+					li {
+						display: inline-block;
+						margin: 0.00rem 0.50rem;
+					} //LI
+				} //UL
+			} //NAV
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-NAV
+
+		#footer-copyright {
+			// GLOBAL
+			p {
+				margin-bottom: 0.00rem;
+			}
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //#FOOTER-COPYRIGHT
+	} //#FOOTER-MAIN-RIGHT
+} //FOOTER

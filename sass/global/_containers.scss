@@ -9,3 +9,96 @@
  *
  * Notes |
 **/
+
+.container-solid-thompsonblue, .container-solid-thompsongray, .container-solid-darkblue, .container-solid-lightblue, .container-solid-transparent, .container-solid-white, .container-solid-lightgray, .container-solid-mediumgray, .container-solid-darkgray, .container-solid-green, .container-solid-orange {
+	// GLOBAL
+	padding: 2.00rem;
+	opacity: 1.00;
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //.CONTAINER-SOLID
+
+.container-solid-thompsonblue {
+	background-color: $thompson-blue-10;
+	border: 1px solid $thompson-blue-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $thompson-blue-0;
+	}
+} //.CONTAINER-SOLID-THOMPSONBLUE
+
+.container-solid-thompsongray {
+	background-color: $thompson-gray-10;
+	border: 1px solid $thompson-gray-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $thompson-gray-0;
+	}
+} //.CONTAINER-SOLID-THOMPSONGRAY
+
+.container-solid-darkblue {
+	background-color: $thompson-blue-16;
+	border: 1px solid $thompson-blue-17;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $thompson-blue-0;
+	}
+} //.CONTAINER-SOLID-DARKBLUE
+
+.container-solid-lightblue {
+	background-color: $thompson-lightblue-10;
+	border: 1px solid $thompson-lightblue-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {}
+} //.CONTAINER-SOLID-LIGHTBLUE
+
+.container-solid-lightgray {
+	background-color: $grayscale-2;
+	border: 1px solid $grayscale-3;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {}
+} //.CONTAINER-SOLID-LIGHTGRAY
+
+.container-solid-mediumgray {
+	background-color: $grayscale-10;
+	border: 1px solid $grayscale-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $grayscale-0;
+	}
+} //.CONTAINER-SOLID-MEDIUMGRAY
+
+.container-solid-darkgray {
+	background-color: $grayscale-16;
+	border: 1px solid $grayscale-17;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $grayscale-0;
+	}
+} //.CONTAINER-SOLID-DARKGRAY
+
+.container-solid-green {
+	background-color: $thompson-green-10;
+	border: 1px solid $thompson-green-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $thompson-green-0;
+	}
+} //.CONTAINER-SOLID-GREEN
+
+.container-solid-orange {
+	background-color: $thompson-orange-10;
+	border: 1px solid $thompson-orange-11;
+
+	h1, h2, h3, h4, h5, h6, p, li, a {
+		color: $thompson-orange-0;
+	}
+} //.CONTAINER-SOLID-ORANGE

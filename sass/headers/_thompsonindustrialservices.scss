@@ -1,0 +1,24 @@
+/**
+ * header/thompsonindustrialservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+
+#header-thompsonindustrialservices {
+	// GLOBAL
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //#FOOTER-THOMPSONINDUSTRIALSERVICES

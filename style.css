@@ -9,5 +9,1183 @@
  * License: GNU General Public License v2 or later
  * License URI: http://www.gnu.org/license/gpl-2.0.html
 **/
+/**
+ * variables/media.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * variables/colors.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * variables/thompson.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/global.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+}
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 575px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+i {
+  margin-right: 0.5rem;
+}
+/**
+ * global/typography.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+h1, h2, h3, h4, h5, h6, h1.elementor-heading-title, h2.elementor-heading-title, h3.elementor-heading-title, h4.elementor-heading-title, h5.elementor-heading-title, h6.elementor-heading-title, h1.slider-title, h2.slider-title, h3.slider-title, h4.slider-title, h5.slider-title, h6.slider-title {
+  font-family: Merriweather, Georgia, serif;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #004e76;
+  margin: 2rem 0rem;
+  padding: 0rem;
+}
+h1, h1.elementor-heading-title, h1.slider-title {
+  font-size: 2.25em;
+}
+@media screen and (min-width: 992px) {
+  h1, h1.elementor-heading-title, h1.slider-title {
+    font-size: 3em;
+  }
+}
+h2, h2.elementor-heading-title, h2.slider-title {
+  font-size: 2em;
+}
+@media screen and (min-width: 992px) {
+  h2, h2.elementor-heading-title, h2.slider-title {
+    font-size: 2.5em;
+  }
+}
+h3, h3.elementor-heading-title, h3.slider-title {
+  font-size: 1.75em;
+}
+@media screen and (min-width: 992px) {
+  h3, h3.elementor-heading-title, h3.slider-title {
+    font-size: 2em;
+  }
+}
+h4, h4.elementor-heading-title, h4.slider-title {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 992px) {
+  h4, h4.elementor-heading-title, h4.slider-title {
+    font-size: 1.5em;
+  }
+}
+h5, h5.elementor-heading-title, h5.slider-title {
+  font-size: 1.25em;
+}
+@media screen and (min-width: 992px) {
+  h5, h5.elementor-heading-title, h5.slider-title {
+    font-size: 1.25em;
+  }
+}
+h6, h6.elementor-heading-title, h6.slider-title {
+  font-size: 1em;
+}
+@media screen and (min-width: 992px) {
+  h6, h6.elementor-heading-title, h6.slider-title {
+    font-size: 1em;
+  }
+}
+p, li {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666666;
+  margin: 0rem;
+}
+p {
+  margin: 1rem 0rem;
+}
+li {
+  margin: 0.5rem 0rem;
+}
+a {
+  text-decoration: none;
+  color: #f36c21;
+}
+a:hover {
+  text-decoration: none;
+  color: #f79864;
+  cursor: pointer;
+}
+.link-address, .link-phone {
+  color: inherit;
+  cursor: default;
+}
+.link-address:hover, .link-phone:hover {
+  color: inherit;
+  cursor: default;
+}
+/**
+ * global/plugins.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/flexbox.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/wrappers.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+.wrapper-content {
+  margin: 0rem auto;
+}
+@media screen and (max-width: 991px) {
+  .wrapper-content {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper-content {
+    width: 90%;
+    max-width: 1200px;
+  }
+}
+/**
+ * global/containers.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+.container-solid-thompsonblue, .container-solid-thompsongray, .container-solid-darkblue, .container-solid-lightblue, .container-solid-transparent, .container-solid-white, .container-solid-lightgray, .container-solid-mediumgray, .container-solid-darkgray, .container-solid-green, .container-solid-orange {
+  padding: 2rem;
+  opacity: 1;
+}
+.container-solid-thompsonblue {
+  background-color: #0082c4;
+  border: 1px solid #0075b0;
+}
+.container-solid-thompsonblue h1, .container-solid-thompsonblue h2, .container-solid-thompsonblue h3, .container-solid-thompsonblue h4, .container-solid-thompsonblue h5, .container-solid-thompsonblue h6, .container-solid-thompsonblue p, .container-solid-thompsonblue li, .container-solid-thompsonblue a {
+  color: #ffffff;
+}
+
+.container-solid-thompsongray {
+  background-color: #8c8e91;
+  border: 1px solid #7e8082;
+}
+.container-solid-thompsongray h1, .container-solid-thompsongray h2, .container-solid-thompsongray h3, .container-solid-thompsongray h4, .container-solid-thompsongray h5, .container-solid-thompsongray h6, .container-solid-thompsongray p, .container-solid-thompsongray li, .container-solid-thompsongray a {
+  color: #ffffff;
+}
+
+.container-solid-darkblue {
+  background-color: #00344e;
+  border: 1px solid #00273b;
+}
+.container-solid-darkblue h1, .container-solid-darkblue h2, .container-solid-darkblue h3, .container-solid-darkblue h4, .container-solid-darkblue h5, .container-solid-darkblue h6, .container-solid-darkblue p, .container-solid-darkblue li, .container-solid-darkblue a {
+  color: #ffffff;
+}
+
+.container-solid-lightblue {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+}
+.container-solid-lightgray {
+  background-color: #e5e5e5;
+  border: 1px solid #d9d9d9;
+}
+.container-solid-mediumgray {
+  background-color: #808080;
+  border: 1px solid #737373;
+}
+.container-solid-mediumgray h1, .container-solid-mediumgray h2, .container-solid-mediumgray h3, .container-solid-mediumgray h4, .container-solid-mediumgray h5, .container-solid-mediumgray h6, .container-solid-mediumgray p, .container-solid-mediumgray li, .container-solid-mediumgray a {
+  color: #ffffff;
+}
+
+.container-solid-darkgray {
+  background-color: #333333;
+  border: 1px solid #262626;
+}
+.container-solid-darkgray h1, .container-solid-darkgray h2, .container-solid-darkgray h3, .container-solid-darkgray h4, .container-solid-darkgray h5, .container-solid-darkgray h6, .container-solid-darkgray p, .container-solid-darkgray li, .container-solid-darkgray a {
+  color: #ffffff;
+}
+
+.container-solid-green {
+  background-color: #a0b739;
+  border: 1px solid #90a533;
+}
+.container-solid-green h1, .container-solid-green h2, .container-solid-green h3, .container-solid-green h4, .container-solid-green h5, .container-solid-green h6, .container-solid-green p, .container-solid-green li, .container-solid-green a {
+  color: #ffffff;
+}
+
+.container-solid-orange {
+  background-color: #f36c21;
+  border: 1px solid #bd611e;
+}
+.container-solid-orange h1, .container-solid-orange h2, .container-solid-orange h3, .container-solid-orange h4, .container-solid-orange h5, .container-solid-orange h6, .container-solid-orange p, .container-solid-orange li, .container-solid-orange a {
+  color: #ffffff;
+}
+
+/**
+ * global/buttons.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+.button-ghost, .button-solid, .elementor-button, span.excerpt.a, input.wpcf7-form-control.wpcf7-submit, .btn-slider {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: none;
+  margin: 3rem 0rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0px;
+}
+.button-ghost:hover, .button-solid:hover, .elementor-button:hover, span.excerpt.a:hover, input.wpcf7-form-control.wpcf7-submit:hover, .btn-slider:hover {
+  cursor: pointer;
+}
+.button-ghost, .btn-slider {
+  background-color: transparent;
+  border: 1px solid #f36c21;
+  color: #f36c21;
+}
+.button-ghost:hover, .btn-slider:hover {
+  background-color: #f79864;
+  color: #ffffff;
+}
+.button-solid, .elementor-button, input.wpcf7-form-control.wpcf7-submit {
+  background-color: #f36c21;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.button-solid:hover, .elementor-button:hover, input.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #f79864;
+  color: #ffffff;
+}
+/**
+ * global/lists.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/forms.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/menu.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * global/header.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+header {
+  display: none;
+  width: 100%;
+  display: block;
+  box-shadow: 0px 1px 20px rgba(51, 51, 51, 0.4);
+}
+header #header-top {
+  min-height: 40px;
+  display: block;
+  padding: 10px 0px;
+  background-color: #00344e;
+  text-align: center;
+  color: #ffffff;
+}
+header #header-top #header-corporatehome a {
+  line-height: 1;
+  color: #ffffff;
+}
+header #header-top #header-corporatehome a:hover {
+  color: #f36c21;
+}
+@media screen and (min-width: 768px) {
+  header #header-top #header-corporatehome {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  header #header-top #header-corporatehome {
+    float: right;
+  }
+}
+header #header-main {
+  display: none;
+}
+/**
+ * global/footer.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+footer {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0rem;
+  padding: 2rem 0rem;
+  background-color: #333333;
+  text-align: center;
+}
+footer .col-md-6, footer .col-lg-4 {
+  padding: 0rem;
+}
+footer p, footer li, footer a {
+  line-height: 1.25;
+  color: #ffffff;
+}
+footer a:hover {
+  color: #f36c21;
+}
+footer #footer-main-left {
+  display: block;
+  margin-bottom: 2rem;
+}
+footer #footer-main-left i {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  footer #footer-main-left {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+  footer #footer-main-left i {
+    display: inline-block;
+  }
+  footer #footer-main-left .link-wrap {
+    margin-left: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer #footer-main-left .link-wrap {
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer #footer-main-left .link-wrap {
+    margin-left: 27px;
+  }
+}
+footer #footer-main-left #footer-address p {
+  margin-top: 0rem;
+}
+footer #footer-main-left #footer-fax p {
+  margin-bottom: 0rem;
+}
+footer #footer-main-right {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  footer #footer-main-right {
+    display: inline-block;
+    float: right;
+    text-align: right;
+  }
+}
+footer #footer-main-right #footer-social {
+  margin-bottom: 2rem;
+}
+footer #footer-main-right #footer-social nav ul {
+  list-style: none;
+  margin-bottom: 0rem;
+  padding: 0rem;
+  border-bottom: 1px solid #ffffff;
+}
+footer #footer-main-right #footer-social nav ul li {
+  display: inline-block;
+  margin-top: 0rem;
+}
+footer #footer-main-right #footer-social i {
+  font-size: 1.75em;
+}
+@media screen and (min-width: 768px) {
+  footer #footer-main-right #footer-social i {
+    font-size: 1.5em;
+  }
+}
+footer #footer-main-right #footer-nav {
+  margin-bottom: 2rem;
+}
+footer #footer-main-right #footer-nav nav ul {
+  list-style: none;
+  margin-bottom: 0rem;
+  padding: 0rem;
+}
+footer #footer-main-right #footer-nav nav ul li {
+  display: inline-block;
+  margin: 0rem 0.5rem;
+}
+footer #footer-main-right #footer-copyright p {
+  margin-bottom: 0rem;
+}
+/**
+ * global/pages.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/banner.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/hero-main.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/hero-secondary.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/hero-subpage.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/section-content-full.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/section-content-left.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/section-content-right.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/section-imagebackground.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/templates/section.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/pages/news-post.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/pages/subpage-full.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * templates/pages/subpage-sidebar.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsonsoutheast.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#header-thompsonsoutheast #header-corporatehome {
+  display: none;
+}
+/**
+ * header/thompsonconstructiongroup.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsonpowerservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsonmaintenanceservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsondisasterrecovery.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsonindustrialservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * header/thompsonturner.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * footer/thompsonsoutheast.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonsoutheast #footer-social {
+  display: none;
+}
+/**
+ * footer/thompsonconstructiongroup.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonconstructiongroup #footer-social #footer-social-twitter {
+  display: none;
+}
+#footer-thompsonconstructiongroup #footer-social #footer-social-youtube {
+  display: none;
+}
+#footer-thompsonconstructiongroup #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * footer/thompsonpowerservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonpowerservices #footer-social #footer-social-twitter {
+  display: none;
+}
+#footer-thompsonpowerservices #footer-social #footer-social-youtube {
+  display: none;
+}
+#footer-thompsonpowerservices #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * footer/thompsonmaintenanceservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonmaintenanceservices #footer-social #footer-social-twitter {
+  display: none;
+}
+#footer-thompsonmaintenanceservices #footer-social #footer-social-youtube {
+  display: none;
+}
+#footer-thompsonmaintenanceservices #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * footer/thompsondisasterrecovery.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsondisasterrecovery #footer-social #footer-social-twitter {
+  display: none;
+}
+#footer-thompsondisasterrecovery #footer-social #footer-social-youtube {
+  display: none;
+}
+#footer-thompsondisasterrecovery #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * footer/thompsonindustrialservices.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonindustrialservices #footer-social #footer-social-instagram {
+  display: none;
+}
+#footer-thompsonindustrialservices #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * footer/thompsonturner.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+#footer-thompsonturner #footer-social #footer-social-twitter {
+  display: none;
+}
+#footer-thompsonturner #footer-social #footer-social-youtube {
+  display: none;
+}
+#footer-thompsonturner #footer-social #footer-social-vimeo {
+  display: none;
+}
+
+/**
+ * sections/about.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/careers.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/companies.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/contact.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/cta.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/leadership.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/locations.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/news.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/safety.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/thompsonfamily.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * sections/whythompson.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/about.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/careers.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/companies.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/index.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/locations.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/news.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/privacy.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/safety.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/search.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/services.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/sitemap.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * pages/whythompson.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+/**
+ * posts/posts.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
 
 /*# sourceMappingURL=style.css.map */

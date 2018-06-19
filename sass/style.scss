@@ -47,22 +47,22 @@
 @import "templates/pages/subpage-sidebar";
 
 // HEADER IMPORTS
-@import "header/thompsonsoutheast";
-@import "header/thompsonconstruction";
-@import "header/thompsonpowerservices";
-@import "header/thompsonmaintenance";
-@import "header/thompsondisasterrecovery";
-@import "header/thompsonindustrial";
-@import "header/thompsonturner";
+@import "headers/thompsonsoutheast";
+@import "headers/thompsonconstructiongroup";
+@import "headers/thompsonpowerservices";
+@import "headers/thompsonmaintenanceservices";
+@import "headers/thompsondisasterrecovery";
+@import "headers/thompsonindustrialservices";
+@import "headers/thompsonturner";
 
 // FOOTER IMPORTS
-@import "footer/thompsonsoutheast";
-@import "footer/thompsonconstruction";
-@import "footer/thompsonpowerservices";
-@import "footer/thompsonmaintenance";
-@import "footer/thompsondisasterrecovery";
-@import "footer/thompsonindustrial";
-@import "footer/thompsonturner";
+@import "footers/thompsonsoutheast";
+@import "footers/thompsonconstructiongroup";
+@import "footers/thompsonpowerservices";
+@import "footers/thompsonmaintenanceservices";
+@import "footers/thompsondisasterrecovery";
+@import "footers/thompsonindustrialservices";
+@import "footers/thompsonturner";
 
 // SECTION IMPORTS
 @import "sections/about";

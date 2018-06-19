@@ -1,0 +1,33 @@
+/**
+ * footer/thompsonconstructiongroup.scss
+ * @package Thompson
+ * @author Period Three
+ * 
+ * @version 1.0
+ * Created 6/19/2018
+ * Updated 
+ *
+ * Notes |
+**/
+
+#footer-thompsonconstructiongroup {
+	// GLOBAL
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	#footer-social {
+		#footer-social-facebook {}
+		#footer-social-twitter {display: none;}
+		#footer-social-instagram {}
+		#footer-social-linkedin {}
+		#footer-social-youtube {display: none;}
+		#footer-social-vimeo {display: none;}
+	} //#FOOTER-SOCIAL
+} //#FOOTER-THOMPSONCONSTRUCTIONGROUP
