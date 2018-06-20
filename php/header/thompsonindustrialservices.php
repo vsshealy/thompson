@@ -34,7 +34,12 @@
 	<div id="header-main">
 		<div class="wrapper-content clearfix">
 			
-			<?php include("php/html/header/menu-wp.php"); ?>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id' => 'primary-menu',
+				) );
+			?>
 
 		</div> <!-- /.WRAPPER-CONTENT -->
 	</div> <!-- /#HEADER-MAIN -->

@@ -15,6 +15,8 @@
 	**/
 ?>
 
+<?php $site = "thompsonconstructiongroup"; ?>
+
 <!DOCTYPE HTML>
 <html id="<?php echo $site ?>" <?php language_attributes(); ?>>
 	
@@ -31,7 +33,7 @@
 		<?php include("php/header/".$site.".php"); ?>
 
 		<!-- CONTENT | INDEX.PHP -->
-		<?php include("php/content/".$site.".php"); ?>
+		<?php include("php/html/content/page-content-loop.php"); ?>
 
 		<!-- FOOTER -->
 		<?php include("php/footer/".$site.".php"); ?>
