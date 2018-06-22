@@ -9,3 +9,101 @@
  *
  * Notes |
 **/
+
+.wpcf7 {
+	// GLOBAL
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	form {
+		// GLOBAL
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+
+		p {
+			// GLOBAL
+			margin: 0.00rem;
+			margin-bottom: 0.50rem;
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //P
+
+		label {
+			// GLOBAL
+			width: 100%;
+			display: block;
+			margin: 0.00rem;
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //LABEL
+
+		input {
+			// GLOBAL
+			width: 100%;
+			display: block;
+			padding: 0.25rem;
+			font-size: 0.80em;
+			font-weight: 400;
+			color: $grayscale-12;
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //INPUT
+
+		input.wpcf7-form-control.wpcf7-submit {
+			// GLOBAL
+			width: auto;
+			display: inline-block;
+			margin: 0.00rem;
+			margin-top: 1.00rem;
+			padding: 0.50rem 1.50rem;
+
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //INPUT.WPCF7-FORM-CONTROL-WPCF7-SUBMIT
+	} //FORM
+} //.WPCF7

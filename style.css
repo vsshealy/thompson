@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Theme Name: Thompson
  * Theme URI: http://www.thompsonsoutheast.com
@@ -60,6 +61,7 @@ html {
   width: 100vw;
 }
 body {
+  width: 100%;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -120,7 +122,7 @@ i {
 h1, h2, h3, h4, h5, h6, h1.elementor-heading-title, h2.elementor-heading-title, h3.elementor-heading-title, h4.elementor-heading-title, h5.elementor-heading-title, h6.elementor-heading-title, h1.slider-title, h2.slider-title, h3.slider-title, h4.slider-title, h5.slider-title, h6.slider-title {
   font-family: Merriweather, Georgia, serif;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.25 !important;
   color: #004e76;
   margin: 2rem 0rem;
   padding: 0rem;
@@ -215,6 +217,10 @@ a:hover {
  *
  * Notes |
 **/
+.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated {
+  padding: 0rem !important;
+}
+
 /**
  * global/flexbox.scss
  * @package Thompson
@@ -226,6 +232,10 @@ a:hover {
  *
  * Notes |
 **/
+.flexbox {
+  display: flex;
+}
+
 /**
  * global/wrappers.scss
  * @package Thompson
@@ -250,6 +260,32 @@ a:hover {
   .wrapper-content {
     width: 90%;
     max-width: 1200px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wrapper-section {
+    padding: 3rem 0rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper-section {
+    padding: 4rem 0rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper-section {
+    padding: 5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper-banner {
+    padding: 2rem 0rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper-banner {
+    padding: 3rem 0rem;
   }
 }
 /**
@@ -344,11 +380,12 @@ a:hover {
 **/
 .button-ghost, .button-solid, .elementor-button, span.excerpt.a, input.wpcf7-form-control.wpcf7-submit, .btn-slider {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: inherit;
   text-align: center;
   text-transform: none;
-  margin: 3rem 0rem;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0px;
+  margin: 2rem 0rem !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 0px !important;
 }
 .button-ghost:hover, .button-solid:hover, .elementor-button:hover, span.excerpt.a:hover, input.wpcf7-form-control.wpcf7-submit:hover, .btn-slider:hover {
   cursor: pointer;
@@ -363,9 +400,9 @@ a:hover {
   color: #ffffff;
 }
 .button-solid, .elementor-button, input.wpcf7-form-control.wpcf7-submit {
-  background-color: #f36c21;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  background-color: #f36c21 !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
 }
 .button-solid:hover, .elementor-button:hover, input.wpcf7-form-control.wpcf7-submit:hover {
   background-color: #f79864;
@@ -393,6 +430,30 @@ a:hover {
  *
  * Notes |
 **/
+.wpcf7 form p {
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}
+.wpcf7 form label {
+  width: 100%;
+  display: block;
+  margin: 0rem;
+}
+.wpcf7 form input {
+  width: 100%;
+  display: block;
+  padding: 0.25rem;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #666666;
+}
+.wpcf7 form input.wpcf7-form-control.wpcf7-submit {
+  width: auto;
+  display: inline-block;
+  margin: 0rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+}
 /**
  * global/menu.scss
  * @package Thompson
@@ -796,6 +857,27 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+.page-section-imagebackground .col-lg-8, .page-section-imagebackground .col-lg-4 {
+  padding: 0rem;
+}
+.page-section-imagebackground .elementor-widget:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.page-section-imagebackground .page-section-content .elementor-background-overlay {
+  opacity: 0.85 !important;
+}
+.page-section-imagebackground .page-section-content .elementor-widget-wrap {
+  padding: 2rem !important;
+}
+.page-section-imagebackground .page-section-content h1, .page-section-imagebackground .page-section-content h2, .page-section-imagebackground .page-section-content h3, .page-section-imagebackground .page-section-content h4, .page-section-imagebackground .page-section-content h5, .page-section-imagebackground .page-section-content h6 {
+  margin-top: 0rem;
+}
+.page-section-imagebackground .page-section-content h5 {
+  font-style: italic;
+  font-weight: 300;
+  color: #4c4c4c;
+  margin-bottom: 2rem;
+}
 /**
  * templates/templates/section.scss
  * @package Thompson
@@ -807,6 +889,96 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+.page-section .col-lg-8, .page-section .col-lg-4, .page-section .col-md-12 {
+  padding: 0rem;
+}
+.page-section .elementor-widget:not(:last-child) {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .page-section .col-lg-8 {
+    padding-right: 3rem;
+  }
+}
+.page-section .page-section-title h1, .page-section .page-section-title h2, .page-section .page-section-title h3, .page-section .page-section-title h4, .page-section .page-section-title h5, .page-section .page-section-title h6 {
+  line-height: 1.25;
+}
+.page-section .page-section-title h5 {
+  font-style: italic;
+  font-weight: 300;
+  color: #4c4c4c;
+}
+@media screen and (max-width: 991px) {
+  .page-section .page-section-title {
+    margin-bottom: 3rem;
+  }
+  .page-section .page-section-title .col-lg-8 {
+    padding-right: 0rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .page-section .page-section-title {
+    margin-bottom: 4rem;
+  }
+  .page-section .page-section-title .col-lg-8 {
+    padding-right: 3rem;
+  }
+}
+.page-section .page-section-content h1, .page-section .page-section-content h2, .page-section .page-section-content h3, .page-section .page-section-content h4, .page-section .page-section-content h5, .page-section .page-section-content h6 {
+  margin-top: 0rem;
+}
+.page-section .page-section-content .page-section-content-main {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .page-section .page-section-content .page-section-content-main {
+    margin-bottom: 0rem;
+  }
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-nav {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-nav h5 {
+  margin-bottom: 1rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-nav ul {
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote {
+  background-color: #0082c4;
+  border: 1px solid #0075b0;
+  padding: 2rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h1, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h2, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h3, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h4, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h5, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h6 {
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h1:before, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h2:before, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h3:before, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h4:before, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h5:before, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h6:before {
+  content: "“";
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h1:after, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h2:after, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h3:after, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h4:after, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h5:after, .page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-quote h6:after {
+  content: "”";
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-contact {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-contact ul {
+  list-style: none;
+  margin: 2rem 0rem;
+  padding: 0rem;
+}
+.page-section .page-section-content .page-section-content-sidebar .page-section-content-sidebar-contact ul li {
+  margin: 0.25rem 0rem;
+  line-height: 1.25;
+}
 /**
  * templates/pages/news-post.scss
  * @package Thompson
@@ -818,6 +990,53 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+.page-post .col-lg-8, .page-post .col-lg-4 {
+  padding: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .page-post .col-lg-8 {
+    padding-right: 3rem;
+  }
+}
+.page-post .page-post-content .page-post-content-article {
+  margin-bottom: 2rem;
+}
+.page-post .page-post-content .page-post-content-article .elementor-button {
+  margin-bottom: 0rem !important;
+}
+@media screen and (min-width: 768px) {
+  .page-post .page-post-content .page-post-content-article {
+    margin-bottom: 0rem;
+  }
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h1, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h2, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h3, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h4, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h5, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press h6 {
+  margin-top: 0rem;
+  margin-bottom: 1rem !important;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press ul {
+  list-style: none;
+  padding: 0rem;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press ul li {
+  margin: 0rem;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-press ul:last-child {
+  margin-bottom: 0rem;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem;
+}
+.page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h1, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h2, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h3, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h4, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h5, .page-post .page-post-content .page-post-content-sidebar .page-post-content-sidebar-thompson h6 {
+  margin-top: 0rem;
+  margin-bottom: 1rem !important;
+}
 /**
  * templates/pages/subpage-full.scss
  * @package Thompson
@@ -1068,6 +1287,37 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-about {
+  text-align: center;
+}
+#section-about .col-lg-6 {
+  padding: 0rem;
+}
+#section-about .elementor-button {
+  margin: 0rem;
+  margin-bottom: 0rem !important;
+}
+#section-about h1, #section-about h2, #section-about h3, #section-about h4, #section-about h5, #section-about h6 {
+  margin-top: 0rem !important;
+}
+@media screen and (min-width: 768px) {
+  #section-about {
+    text-align: left;
+  }
+  #section-about .column-right {
+    padding-left: 2rem;
+  }
+}
+#section-about .elementor-background-overlay {
+  background: rgba(232, 233, 233, 0.9);
+  background: linear-gradient(90deg, rgba(232, 232, 233, 0.9) 0%, rgba(232, 232, 233, 0.9) 50%, rgba(232, 232, 233, 0.9) 50%, rgba(232, 232, 233, 0.9) 100%);
+  opacity: 1 !important;
+}
+@media screen and (min-width: 768px) {
+  #section-about .elementor-background-overlay {
+    background: linear-gradient(90deg, rgba(232, 232, 233, 0) 0%, rgba(232, 232, 233, 0) 50%, rgba(232, 232, 233, 0.9) 50%, rgba(232, 232, 233, 0.9) 100%);
+  }
+}
 /**
  * sections/careers.scss
  * @package Thompson
@@ -1079,6 +1329,27 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-careers .elementor-background-overlay {
+  background-color: #004e76 !important;
+  opacity: 0.9 !important;
+}
+#section-careers .col-lg-6, #section-careers .col-md-12 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#section-careers h1, #section-careers h2, #section-careers h3, #section-careers h4, #section-careers h5, #section-careers h6 {
+  margin-top: 0rem;
+  color: #ffffff;
+}
+#section-careers p {
+  font-family: Merriweather, Georgia, serif;
+  color: #ffffff;
+  margin-bottom: 0rem;
+}
+#section-careers .elementor-button {
+  margin: 0rem;
+  margin-bottom: 0rem !important;
+}
 /**
  * sections/companies.scss
  * @package Thompson
@@ -1090,6 +1361,82 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-companybannerlinks {
+  text-align: center;
+  background-color: #004e76;
+}
+#section-companybannerlinks .col-md-4 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#section-companybannerlinks .companybannerlinks-row {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #section-companybannerlinks .companybannerlinks-row {
+    display: block;
+  }
+}
+#section-companybannerlinks .companybannerlinks-column {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  #section-companybannerlinks .companybannerlinks-column {
+    display: none;
+  }
+}
+#section-companybannerlinks .companybannerlink {
+  border: 1px solid #00689d;
+}
+#section-companybannerlinks .companybannerlink .elementor-widget-wrap {
+  padding: 3rem;
+}
+#section-companybannerlinks .companybannerlink img {
+  max-height: 90px;
+  width: auto;
+  display: block;
+  margin: 0rem auto;
+  margin-bottom: 1rem;
+}
+#section-companybannerlinks .companybannerlink p {
+  color: #ffffff;
+}
+.banner-companies {
+  text-align: center;
+}
+.banner-companies .col-md-4 {
+  padding: 0rem;
+}
+.banner-companies .banner-companies-row {
+  display: none;
+}
+.banner-companies .banner-companies-column {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .banner-companies .banner-companies-row {
+    display: block;
+  }
+  .banner-companies .banner-companies-column {
+    display: none;
+  }
+}
+.banner-companies .company-link {
+  border: 1px solid #00689d;
+}
+.banner-companies .company-link .elementor-widget-wrap {
+  padding: 3rem;
+}
+.banner-companies .company-link img {
+  max-height: 90px;
+  width: auto;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 1rem;
+}
+.banner-companies .company-link p {
+  color: #ffffff;
+}
 /**
  * sections/contact.scss
  * @package Thompson
@@ -1101,6 +1448,65 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-contact .elementor-background-overlay {
+  background-color: #8c8e91 !important;
+  opacity: 1;
+}
+#section-contact .col-lg-6, #section-contact .col-md-12 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#section-contact h1, #section-contact h2, #section-contact h3, #section-contact h4, #section-contact h5, #section-contact h6 {
+  color: #ffffff !important;
+  margin-bottom: 0rem !important;
+}
+#section-contact p {
+  color: #ffffff !important;
+}
+#section-contact .elementor-button {
+  margin: 0rem;
+}
+#section-contact .column-left .elementor-button {
+  margin: 0rem !important;
+  margin-top: 4rem !important;
+}
+@media screen and (max-width: 991px) {
+  #section-contact .column-left {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section-contact .column-left {
+    padding-right: 2rem;
+  }
+}
+#section-contact .column-right p {
+  margin: 0rem !important;
+}
+#section-contact .column-right form label {
+  width: 100% !important;
+}
+#section-contact .column-right form p {
+  font-size: 1em;
+  margin-bottom: 0rem;
+  padding-bottom: 0px;
+}
+#section-contact .column-right form textarea.wpcf7-form-control.wpcf7-textarea, #section-contact .column-right form input.wpcf7-form-control.wpcf7-text {
+  margin-top: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+#section-contact .column-right form textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 4em;
+}
+#section-contact .column-right form input.wpcf7-form-control.wpcf7-text {
+  height: 2em;
+}
+#section-contact .column-right form input.wpcf7-form-control.wpcf7-submit {
+  margin: 0px;
+  margin-top: 2rem !important;
+  margin-bottom: 0rem !important;
+}
+
 /**
  * sections/cta.scss
  * @package Thompson
@@ -1112,6 +1518,42 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-cta {
+  margin-bottom: 4rem;
+}
+#section-cta .col-md-4 {
+  padding: 0rem;
+}
+#section-cta .cta-card {
+  padding: 0rem 0.5rem;
+  margin-bottom: 1rem;
+}
+#section-cta .cta-card .elementor-widget-wrap {
+  padding: 2rem;
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+}
+#section-cta .cta-card h1, #section-cta .cta-card h2, #section-cta .cta-card h3, #section-cta .cta-card h4, #section-cta .cta-card h5, #section-cta .cta-card h6 {
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+#section-cta .cta-card p {
+  margin: 0rem;
+}
+#section-cta .cta-card a {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  #section-cta .cta-card {
+    margin-bottom: 0rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  #section-cta .cta-card {
+    padding: 0rem 1rem;
+  }
+}
 /**
  * sections/leadership.scss
  * @package Thompson
@@ -1123,6 +1565,29 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-leadership-thompsonconstructiongroup .section-title, #section-leadership-thompsonindustrialservices .section-title, #section-leadership-thompsonturner .section-title {
+  margin: 1rem 0rem 1rem 1rem;
+}
+#section-leadership-thompsonconstructiongroup ul, #section-leadership-thompsonindustrialservices ul, #section-leadership-thompsonturner ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0rem;
+}
+#section-leadership-thompsonconstructiongroup ul li, #section-leadership-thompsonindustrialservices ul li, #section-leadership-thompsonturner ul li {
+  margin: 0rem;
+}
+#section-leadership-thompsonconstructiongroup .leadership-card, #section-leadership-thompsonindustrialservices .leadership-card, #section-leadership-thompsonturner .leadership-card {
+  padding: 1rem;
+}
+#section-leadership-thompsonconstructiongroup .leadership-card h6, #section-leadership-thompsonconstructiongroup .leadership-card p, #section-leadership-thompsonindustrialservices .leadership-card h6, #section-leadership-thompsonindustrialservices .leadership-card p, #section-leadership-thompsonturner .leadership-card h6, #section-leadership-thompsonturner .leadership-card p {
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}
+#section-leadership-thompsonconstructiongroup .leadership-card .elementor-column-wrap.elementor-element-populated, #section-leadership-thompsonindustrialservices .leadership-card .elementor-column-wrap.elementor-element-populated, #section-leadership-thompsonturner .leadership-card .elementor-column-wrap.elementor-element-populated {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem !important;
+}
 /**
  * sections/locations.scss
  * @package Thompson
@@ -1134,6 +1599,33 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-locations-thompsonconstructiongroup .section-title, #section-locations-thompsonindustrialservices .section-title, #section-locations-thompsonturner .section-title {
+  margin: 1rem 0rem 1rem 1rem;
+}
+#section-locations-thompsonconstructiongroup ul, #section-locations-thompsonindustrialservices ul, #section-locations-thompsonturner ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 0rem;
+}
+#section-locations-thompsonconstructiongroup ul li, #section-locations-thompsonindustrialservices ul li, #section-locations-thompsonturner ul li {
+  margin: 0rem;
+}
+#section-locations-thompsonconstructiongroup .locations-card, #section-locations-thompsonindustrialservices .locations-card, #section-locations-thompsonturner .locations-card {
+  padding: 1rem;
+}
+#section-locations-thompsonconstructiongroup .locations-card h6, #section-locations-thompsonconstructiongroup .locations-card p, #section-locations-thompsonindustrialservices .locations-card h6, #section-locations-thompsonindustrialservices .locations-card p, #section-locations-thompsonturner .locations-card h6, #section-locations-thompsonturner .locations-card p {
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}
+#section-locations-thompsonconstructiongroup .locations-card .elementor-column-wrap.elementor-element-populated, #section-locations-thompsonindustrialservices .locations-card .elementor-column-wrap.elementor-element-populated, #section-locations-thompsonturner .locations-card .elementor-column-wrap.elementor-element-populated {
+  background-color: #e9f1fa;
+  border: 1px solid #d2d9e1;
+  padding: 2rem !important;
+}
+#section-locations-thompsonconstructiongroup .locations-card .location-contact, #section-locations-thompsonindustrialservices .locations-card .location-contact, #section-locations-thompsonturner .locations-card .location-contact {
+  margin-bottom: 0rem;
+}
+
 /**
  * sections/news.scss
  * @package Thompson
@@ -1145,6 +1637,100 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-news .elementor-background-overlay {
+  background-color: #e8e8e9 !important;
+  opacity: 1 !important;
+}
+#section-news .col-lg-6, #section-news .col-md-12 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#section-news ul.display-posts-listing {
+  list-style: none !important;
+  margin: 0rem;
+  padding: 0rem;
+}
+#section-news ul.display-posts-listing li.listing-item {
+  margin: 0rem;
+}
+@media screen and (min-width: 992px) {
+  #section-news #section-news-latest {
+    padding-right: 3rem !important;
+  }
+}
+#section-news #section-news-latest ul.display-posts-listing li.listing-item a.title {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1.25 !important;
+  color: #004e76;
+  display: block;
+  margin-bottom: 1rem;
+}
+#section-news #section-news-latest ul.display-posts-listing li.listing-item a.title:hover {
+  color: #f36c21;
+}
+@media screen and (min-width: 992px) {
+  #section-news #section-news-latest ul.display-posts-listing li.listing-item a.title {
+    font-size: 2rem;
+  }
+}
+#section-news #section-news-latest ul.display-posts-listing li.listing-item span.excerpt-dash {
+  display: none;
+}
+#section-news #section-news-latest ul.display-posts-listing li.listing-item span.excerpt a {
+  font-weight: 700;
+}
+#section-news #section-news-latest ul.display-posts-listing li.listing-item span.excerpt a:before {
+  content: " ... ";
+}
+#section-news #section-news-archive {
+  background-color: #004e76 !important;
+}
+#section-news #section-news-archive h1, #section-news #section-news-archive h2, #section-news #section-news-archive h3, #section-news #section-news-archive h4, #section-news #section-news-archive h5, #section-news #section-news-archive h6 {
+  color: #ffffff !important;
+}
+#section-news #section-news-archive .elementor-button {
+  margin: 0rem !important;
+  margin-top: 1rem !important;
+}
+#section-news #section-news-archive .elementor-widget-shortcode {
+  padding: 1rem;
+  border: 1px solid #ffffff;
+}
+#section-news #section-news-archive .elementor-widget-shortcode span.date {
+  display: block;
+  color: #99cde7;
+}
+#section-news #section-news-archive .elementor-widget-shortcode a.title {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.25em;
+  color: #ffffff;
+  display: block;
+  margin-top: 0.5rem;
+}
+#section-news #section-news-archive .elementor-widget-shortcode a.title:hover {
+  color: #f36c21;
+}
+#section-news #section-news-archive .elementor-column-wrap {
+  padding: 3rem 1rem !important;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 992px) {
+  #section-news #section-news-archive .elementor-column-wrap {
+    padding: 4rem 2rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #section-news #section-news-archive .elementor-column-wrap {
+    padding: 5rem 2rem !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  #section-news #section-news-archive {
+    margin-bottom: 1rem;
+  }
+}
 /**
  * sections/safety.scss
  * @package Thompson
@@ -1156,6 +1742,26 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+.banner-safety {
+  text-align: center;
+}
+.banner-safety .elementor-background-overlay {
+  background-color: #8c8e91 !important;
+  opacity: 1 !important;
+}
+.banner-safety .col-lg-9 {
+  display: block;
+  margin: 0rem auto;
+  padding: 0rem;
+}
+.banner-safety h1, .banner-safety h2, .banner-safety h3, .banner-safety h4, .banner-safety h5, .banner-safety h6 {
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0rem;
+}
+.banner-safety .elementor-button {
+  margin-bottom: 0rem !important;
+}
 /**
  * sections/thompsonfamily.scss
  * @package Thompson
@@ -1167,6 +1773,23 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-thompsonfamily {
+  text-align: center;
+}
+#section-thompsonfamily .elementor-background-overlay {
+  background-color: #0082c4 !important;
+  opacity: 1 !important;
+}
+#section-thompsonfamily .col-lg-9 {
+  display: block;
+  margin: 0rem auto;
+  padding: 0rem;
+}
+#section-thompsonfamily h1, #section-thompsonfamily h2, #section-thompsonfamily h3, #section-thompsonfamily h4, #section-thompsonfamily h5, #section-thompsonfamily h6 {
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0rem;
+}
 /**
  * sections/whythompson.scss
  * @package Thompson
@@ -1178,6 +1801,42 @@ footer #footer-main-right #footer-copyright p {
  *
  * Notes |
 **/
+#section-whythompson {
+  text-align: center;
+}
+#section-whythompson .col-lg-6 {
+  padding: 0rem;
+}
+#section-whythompson .elementor-button {
+  margin: 0rem;
+  margin-bottom: 0rem !important;
+}
+#section-whythompson h1, #section-whythompson h2, #section-whythompson h3, #section-whythompson h4, #section-whythompson h5, #section-whythompson h6 {
+  color: #ffffff;
+  margin-top: 0rem !important;
+}
+#section-whythompson p {
+  font-family: Merriweather, Georgia, serif;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  #section-whythompson {
+    text-align: left;
+  }
+  #section-whythompson .column-left {
+    padding-right: 2rem;
+  }
+}
+#section-whythompson .elementor-background-overlay {
+  background: rgba(0, 130, 196, 0.9);
+  background: linear-gradient(90deg, rgba(0, 130, 196, 0.9) 0%, rgba(0, 130, 196, 0.9) 50%, rgba(0, 130, 196, 0.9) 50%, rgba(0, 130, 196, 0.9) 100%);
+  opacity: 1 !important;
+}
+@media screen and (min-width: 768px) {
+  #section-whythompson .elementor-background-overlay {
+    background: linear-gradient(90deg, rgba(0, 130, 196, 0.9) 0%, rgba(0, 130, 196, 0.9) 50%, rgba(0, 130, 196, 0) 50%, rgba(0, 130, 196, 0) 100%);
+  }
+}
 /**
  * pages/about.scss
  * @package Thompson

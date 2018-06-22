@@ -9,3 +9,82 @@
  *
  * Notes |
 **/
+
+.page-section-imagebackground {
+	// GLOBAL
+	.col-lg-8, .col-lg-4 {
+		padding: 0.00rem;
+	} //BOOTSTRAP
+
+	.elementor-widget:not(:last-child) {
+		margin-bottom: 1.00rem;
+	} //.ELEMENTOR-WIDGET
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	.page-section-content {
+		// GLOBAL
+		.elementor-background-overlay {
+			opacity: 0.85 !important;
+		} //.ELEMENTOR-BACKGROUND-OVERLAY
+
+		.elementor-widget-wrap {
+			padding: 2.00rem !important;
+		} //.ELEMENTOR-WIDGET-WRAP
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 0.00rem;
+		} //HEADINGS
+
+		h5 {
+			font-style: italic;
+			font-weight: 300;
+			color: $grayscale-14;
+			margin-bottom: 2.00rem;
+		} //H5
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+
+		.page-section-content-main {
+			// GLOBAL
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //.PAGE-SECTION-CONTENT-MAIN
+
+		.page-section-content-sidebar {
+			// GLOBAL
+			// MOBILE
+			@media screen and (max-width: 575px) {} //COL-XS
+			@media screen and (min-width: 576px) {} //COL-SM
+			@media screen and (min-width: 768px) {} //COL-MD
+			@media screen and (max-width: 991px) {} //MOBILE
+
+			// DESKTOP
+			@media screen and (min-width: 992px) {} //COL-LG
+			@media screen and (min-width: 1200px) {} //COL-XL
+		} //.PAGE-SECTION-CONTENT-SIDEBAR
+	} //.PAGE-SECTION-CONTENT
+} //.PAGE-SECTION-IMAGEBACKGROUND

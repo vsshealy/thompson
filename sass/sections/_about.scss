@@ -9,3 +9,56 @@
  *
  * Notes |
 **/
+
+#section-about {
+	// GLOBAL
+	text-align: center;
+
+	.col-lg-6 {
+		padding: 0.00rem;
+	} //BOOTSTRAP
+
+	.elementor-button {
+		margin: 0.00rem;
+		margin-bottom: 0.00rem !important;
+	} //.ELEMENTOR-BUTTON
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0.00rem !important;
+	} //HEADINGS
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {
+		text-align: left;
+		
+		.column-right {
+			padding-left: 2.00rem;
+		} //.COLUMN-RIGHT
+	} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	.elementor-background-overlay {
+		// GLOBAL
+		background: rgba(232,233,233,0.90);
+		background: linear-gradient(90deg, rgba(232,232,233,0.90) 0%, rgba(232,232,233,0.90) 50%, rgba(232,232,233,0.90) 50%, rgba(232,232,233,0.90) 100%);
+		opacity: 1.00 !important;
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {
+			background: linear-gradient(90deg, rgba(232,232,233,0.00) 0%, rgba(232,232,233,0.00) 50%, rgba(232,232,233,0.90) 50%, rgba(232,232,233,0.90) 100%);
+		} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+	} //.ELEMENTOR-BACKGROUND-OVERLAY
+} //#SECTION-ABOUT

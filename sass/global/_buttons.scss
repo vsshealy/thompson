@@ -13,11 +13,12 @@
 .button-ghost, .button-solid, .elementor-button, span.excerpt.a, input.wpcf7-form-control.wpcf7-submit, .btn-slider {
 	// GLOBAL
 	font-family: $text-sans;
+	font-size: inherit;
 	text-align: center;
 	text-transform: none;
-	margin: 3.00rem 0.00rem;
-	padding: 0.50rem 1.50rem;
-	border-radius: 0px;
+	margin: 2.00rem 0.00rem !important;
+	padding: 0.50rem 1.50rem !important;
+	border-radius: 0px !important;
 
 	&:hover {
 		cursor: pointer;
@@ -58,9 +59,9 @@
 
 .button-solid, .elementor-button, input.wpcf7-form-control.wpcf7-submit {
 	// GLOBAL
-	background-color: $thompson-orange-10;
-	border: 1px solid $thompson-orange-0;
-	color: $thompson-orange-0;
+	background-color: $thompson-orange-10 !important;
+	border: 1px solid $thompson-orange-0 !important;
+	color: $thompson-orange-0 !important;
 
 	&:hover {
 		background-color: $thompson-orange-7;

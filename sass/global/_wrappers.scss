@@ -50,11 +50,17 @@
 	@media screen and (max-width: 575px) {} //COL-XS
 	@media screen and (min-width: 576px) {} //COL-SM
 	@media screen and (min-width: 768px) {} //COL-MD
-	@media screen and (max-width: 991px) {} //MOBILE
+	@media screen and (max-width: 991px) {
+		padding: 3.00rem 0.00rem;
+	} //MOBILE
 
 	// DESKTOP
-	@media screen and (min-width: 992px) {} //COL-LG
-	@media screen and (min-width: 1200px) {} //COL-XL
+	@media screen and (min-width: 992px) {
+		padding: 4.00rem 0.00rem;
+	} //COL-LG
+	@media screen and (min-width: 1200px) {
+		padding: 5.00rem 0.00rem;
+	} //COL-XL
 } //.WRAPPER-SECTION
 
 .wrapper-banner {
@@ -63,9 +69,13 @@
 	@media screen and (max-width: 575px) {} //COL-XS
 	@media screen and (min-width: 576px) {} //COL-SM
 	@media screen and (min-width: 768px) {} //COL-MD
-	@media screen and (max-width: 991px) {} //MOBILE
+	@media screen and (max-width: 991px) {
+		padding: 2.00rem 0.00rem;
+	} //MOBILE
 
 	// DESKTOP
-	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 992px) {
+		padding: 3.00rem 0.00rem;
+	} //COL-LG
 	@media screen and (min-width: 1200px) {} //COL-XL
 } //.WRAPPER-BANNER

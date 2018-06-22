@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, h1.elementor-heading-title, h2.elementor-heading-title, 
 	// GLOBAL
 	font-family: $text-serif;
 	font-weight: 400;
-	line-height: 1.25;
+	line-height: 1.25 !important;
 	color: $thompson-blue-14;
 	margin: 2.00rem 0.00rem;
 	padding: 0.00rem;

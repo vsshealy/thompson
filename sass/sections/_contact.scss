@@ -9,3 +9,109 @@
  *
  * Notes |
 **/
+
+#section-contact {
+	// GLOBAL
+	.elementor-background-overlay {
+		background-color: $thompson-gray-10 !important;
+		opacity: 1.00;
+	} //.ELEMENTOR-BACKGROUND-OVERLAY
+
+	.col-lg-6, .col-md-12 {
+		padding-left: 0.00rem;
+		padding-right: 0.00rem;
+	} //BOOTSTRAP
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $thompson-gray-0 !important;
+		margin-bottom: 0.00rem !important;
+	}//HEADINGS
+
+	p {
+		color: $thompson-gray-0 !important;
+	} //P
+
+	.elementor-button {
+		margin: 0.00rem;
+	} //.ELEMENTOR-BUTTON
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	.column-left {
+		// GLOBAL
+		.elementor-button {
+			margin: 0.00rem !important;
+			margin-top: 4.00rem !important;
+		}
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {} //COL-MD
+		@media screen and (max-width: 991px) {
+			margin-bottom: 2.00rem;
+		} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {
+			padding-right: 2.00rem;
+		} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+	} //.COLUMN-LEFT
+
+	.column-right {
+		// GLOBAL
+		p {
+			margin: 0.00rem !important;
+		}
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+
+		form {
+			label {
+				width: 100% !important;
+			}
+
+			p {
+				font-size: 1.00em;
+				margin-bottom: 0.00rem;
+				padding-bottom: 0px;
+			}
+
+			textarea.wpcf7-form-control.wpcf7-textarea, input.wpcf7-form-control.wpcf7-text {
+				margin-top: 0.50rem;
+				padding: 0.00rem 0.50rem;
+			}
+
+			textarea.wpcf7-form-control.wpcf7-textarea {
+				height: 4.00em;
+			}
+
+			input.wpcf7-form-control.wpcf7-text {
+				height: 2.00em;
+			}
+
+			input.wpcf7-form-control.wpcf7-submit {
+				margin: 0px;
+				margin-top: 2.00rem !important;
+				margin-bottom: 0.00rem !important;
+			}
+		} //FORM
+	} //.COLUMN-RIGHT
+} //#SECTION-CONTACT

@@ -9,3 +9,42 @@
  *
  * Notes |
 **/
+
+#section-careers {
+	// GLOBAL
+	.elementor-background-overlay {
+		background-color: $thompson-blue-14 !important;
+		opacity: 0.90 !important;
+	} //.ELEMENTOR-BACKGROUND-OVERLAY
+
+	.col-lg-6, .col-md-12 {
+		padding-left: 0.00rem;
+		padding-right: 0.00rem;
+	} //BOOTSTRAP
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0.00rem;
+		color: $thompson-blue-0;
+	} //HEADINGS
+
+	p {
+		font-family: $text-serif;
+		color: $thompson-blue-0;
+		margin-bottom: 0.00rem;
+	} //P
+
+	.elementor-button {
+		margin: 0.00rem;
+		margin-bottom: 0.00rem !important;
+	} //.ELEMENTOR-BUTTON
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //#SECTION-CAREERS

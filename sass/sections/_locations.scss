@@ -9,3 +9,62 @@
  *
  * Notes |
 **/
+
+#section-locations-thompsonconstructiongroup, #section-locations-thompsonindustrialservices, #section-locations-thompsonturner {
+	// GLOBAL
+	.section-title {
+		margin: 1.00rem 0.00rem 1.00rem 1.00rem;
+	} //.SECTION-TITLE
+
+	ul {
+		list-style: none;
+		margin-bottom: 2.00rem;
+		padding: 0.00rem;
+
+		li {
+			margin: 0.00rem;
+		}
+	} //UL
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+
+	.locations-card {
+		// GLOBAL
+		padding: 1.00rem;
+
+		h6, p {
+			margin: 0.00rem;
+			margin-bottom: 0.50rem;
+		}
+
+		// MOBILE
+		@media screen and (max-width: 575px) {} //COL-XS
+		@media screen and (min-width: 576px) {} //COL-SM
+		@media screen and (min-width: 768px) {} //COL-MD
+		@media screen and (max-width: 991px) {} //MOBILE
+
+		// DESKTOP
+		@media screen and (min-width: 992px) {} //COL-LG
+		@media screen and (min-width: 1200px) {} //COL-XL
+
+		.elementor-column-wrap.elementor-element-populated {
+			background-color: $thompson-lightblue-10;
+			border: 1px solid $thompson-lightblue-11;
+			padding: 2.00rem !important;
+		}
+
+		.location-address {} //.LOCATION-ADDRESS
+
+		.location-contact {
+			margin-bottom: 0.00rem;
+		} //.LOCATION-CONTACT
+	} //.LOCATIONS-CARD
+} //ALL

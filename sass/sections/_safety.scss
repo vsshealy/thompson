@@ -9,3 +9,41 @@
  *
  * Notes |
 **/
+
+.banner-safety {
+	// GLOBAL
+	text-align: center;
+
+	.elementor-background-overlay {
+		background-color: $thompson-gray-10 !important;
+		opacity: 1.00 !important;
+	} //.ELEMENTOR-BACKGROUND-OVERLAY
+
+	.col-lg-9 {
+		display: block;
+		margin: 0.00rem auto;
+		padding: 0.00rem;
+	} //BOOTSTRAP
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.25;
+		color: $thompson-gray-0;
+		margin-bottom: 0.00rem;
+	} //HEADINGS
+
+	p {}
+
+	.elementor-button {
+		margin-bottom: 0.00rem !important;
+	} //.ELEMENTOR-BUTTON
+
+	// MOBILE
+	@media screen and (max-width: 575px) {} //COL-XS
+	@media screen and (min-width: 576px) {} //COL-SM
+	@media screen and (min-width: 768px) {} //COL-MD
+	@media screen and (max-width: 991px) {} //MOBILE
+
+	// DESKTOP
+	@media screen and (min-width: 992px) {} //COL-LG
+	@media screen and (min-width: 1200px) {} //COL-XL
+} //.BANNER-SAFETY
